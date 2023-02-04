@@ -1,0 +1,147 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    
+  }
+  body{
+    overflow: hidden;
+  }
+  .sky{
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/sky.jpg");
+    background-position: absolute;
+    background-repeat: repeat-x;
+    background-size: cover;
+    overflow: hidden;
+    animation: bgmove 6s linear infinite;
+  }
+  @keyframes bgmove{
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -7608px;
+    }
+  }
+  .car1{
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    animation: moving 6s linear infinite;
+  }
+  @keyframes moving{
+    0% {
+        left: -15%;
+    }
+    30% {
+        left: 35%;
+    }
+    60% {
+        left: 60%;
+    }
+    100% {
+        left: 100%;
+    }
+
+  }
+  .road{
+    height: 450px;
+    width: 500%;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    animation: road 3s linear infinite;
+  }
+  .road img{
+    height: 450px;
+    width: 500%;
+  }
+  @keyframes road{
+    100%{
+      transform: translateX(-3400px);
+    }
+    
+  }
+  .container{
+    height: 100vh;
+    width: 100%;
+  /*   background-image: url("images/sky.jpg"); */
+  /*   background: url("images/bgrd.png"); */
+  }
+  .car img{
+  /*   height: 350px; */
+    width: 450px;
+    left: 30%;
+    bottom: -10px;
+    position: absolute;
+    z-index: 2;
+    
+  }
+  .wheel img{
+    height: 80px;
+    width: 80px;
+    /* animation: wheel 0.1s linear infinite; */
+  }
+  
+  @keyframes wheel{
+    100%{
+      transform: rotate(360deg) ;
+    }
+  }
+  .tyre-right {
+    position: absolute;
+   left: 321px;
+   bottom: 36px;
+}
+.tyre-left {
+    position: absolute;
+   bottom: 36px;
+   left: 69px;
+}
+.tyre {
+    z-index: 2;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background: #2d2b2b;
+    animation: tyre 6s linear infinite;
+}
+.rim {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2.2px silver dotted;
+    top: 20%;
+    left: 20%;
+}
+  /* .wheel{
+    position: absolute;
+    left: 60.3%;
+    bottom: 195px;transform: translateX(-50%);
+    z-index: 2;
+     
+  }
+  .right{
+    position: absolute;
+    left: 38%;
+    bottom: 27px;
+  }
+   .left img{
+    position: absolute;
+      left: -77px;
+  
+      top: 84px;
+  }   */
+  
+  
+  
