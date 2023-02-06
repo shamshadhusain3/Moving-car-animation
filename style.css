@@ -50,7 +50,7 @@ html, body {
 
   }
   .road{
-    height: 350px;
+    height: 200px;
     width: 500%;
     display: block;
     position: absolute;
@@ -62,7 +62,7 @@ html, body {
     animation: road 3s linear infinite;
   }
   .road img{
-    height: 350px;
+    height: 200px;
     width: 500%;
   }
   @keyframes road{
