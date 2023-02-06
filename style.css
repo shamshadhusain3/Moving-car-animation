@@ -55,7 +55,7 @@ html, body {
     display: block;
     position: absolute;
     z-index: 2;
-    bottom: -15px;
+    bottom: -150px;
     left: 0;
     right: 0;
     background-repeat: repeat-x;
